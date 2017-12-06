@@ -26,13 +26,21 @@ var arrayTasks = {
 		return total;
 	},
 
-	// findDuplicates: function (arr) {
+	findDuplicates: function (arr) {
+		let result = [];
+		arr.forEach(function(element, index) {
+		if (arr.indexOf(element, index + 1) > -1) {
+		if (result.indexOf(element) === -1) {
+		result.push(element);
+		      }
+		    }
+		  });
+		return result;
+	},
 
-	// },
+	removeAndClone: function (arr, valueToRemove) {
 
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
